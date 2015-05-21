@@ -1,0 +1,19 @@
+{
+  "name": "library_app",
+  "main": "index.js",
+  "version": "0.0.0",
+  "authors": [
+    "ratacat <neuralsplash@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
