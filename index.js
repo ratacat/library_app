@@ -2,13 +2,13 @@ var express = require("express"),
  body = require("body-parser"),
  path = require("path");
 
-app = express();
-app.use(bodyParser.urlencoded({etended: true}));
+var app = express();
+app.use(body.urlencoded({extended: true}));
 
 var views = path.join(__dirname, "views");
 
 app.get("/", function(req, res) {
-	var homePath = path(views, "home.html");
+	var homePath = path.join(views, "home.html");
 	res.sendFile(homePath);
 });
 
