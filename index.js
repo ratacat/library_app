@@ -5,6 +5,8 @@ var express = require("express"),
 var app = express();
 app.use(body.urlencoded({extended: true}));
 
+var db = require("./models");
+
 var views = path.join(__dirname, "views");
 
 app.get("/", function(req, res) {
@@ -14,4 +16,4 @@ app.get("/", function(req, res) {
 
 app.listen(3000, function() {
 	console.log("express is");
-})
+});
